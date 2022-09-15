@@ -1,2 +1,2 @@
 # trybe-exercises
-Pasta de exercícios trybe
+Minha pasta de exercícios trybe
