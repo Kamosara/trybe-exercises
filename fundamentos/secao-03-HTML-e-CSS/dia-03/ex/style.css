@@ -1,0 +1,15 @@
+h1, p {
+    text-align: center;
+  }
+
+  li:hover {
+    background-color: rgb(73, 184, 103);
+    list-style: none
+  }
+
+  li:active {
+    font-style: fantasy ;
+    list-style: none
+  }
+
+  
