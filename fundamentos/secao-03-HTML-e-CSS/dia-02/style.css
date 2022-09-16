@@ -1,0 +1,36 @@
+h1{
+    font-size: 65px;
+    color: orange;
+    font-style: sans-serif;
+}
+
+.favorite-color{
+    background-color: grey;
+    text-decoration: underline;
+    text-decoration-color: grey;
+}
+
+#yellow{
+    color: yellow;
+}
+
+#red{
+    color: red;
+}
+
+#brown{
+    color: brown;
+}
+
+p{
+    font-weight: 600;
+    font-size: 3em;
+}
+
+
+body{
+    font-size: 16px;
+    line-height: 10px;
+    font-style: comic;
+
+}
