@@ -1,3 +1,7 @@
+
+
+                          /* EXERCÍCIO 1 */
+
 /* .caixa {
     color: white;
     display: inline-block;
@@ -32,7 +36,10 @@
   
   }  */
 
-  .super-mario {
+  
+                          /* EXERCÍCIO 2 */
+  
+  /* .super-mario {
     width: 200px;
     position: absolute;
   }
@@ -64,4 +71,19 @@
     top: 375px;
     width: 200px;
     left: 600px;
+  } */
+
+
+                                /* EXERCÍCIO 3 */
+
+  h1, p {
+    text-align: center;
+  }
+
+  li:hover {
+    background-color: rgb(73, 184, 103);
+  }
+
+  li:active {
+    font-style: fantasy ;
   }
