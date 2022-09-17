@@ -19,10 +19,9 @@ div:nth-of-type(5) {
     color: rgb(177,228,232);
 }
 
-div {
+div h3 {
     background-color: rgb(95,186,119);
 }
-h3:nth-of-type(odd) {
+div h3:nth-of-type(2n+1) {
     font-style: italic;
 } 
- 
