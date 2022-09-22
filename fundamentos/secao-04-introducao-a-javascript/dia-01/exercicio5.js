@@ -1,4 +1,4 @@
-let salario = 3000;
+let salario = 18000;
 let aliquotaINSS;
 let aliquotaIR;
 let salarioINSS;
@@ -43,7 +43,7 @@ if(salarioINSS <= 1903.98){
     impostoIR = aliquotaIR - 636.13;
     salarioIR = salarioINSS - impostoIR;
     console.log(aliquotaIR, impostoIR, salarioIR);
-}else if(salarioINSS <= 4664.68){
+}else if(salarioINSS >= 4664.68){
     aliquotaIR = salarioINSS * 0.275;
     impostoIR = aliquotaIR - 869.36;
     salarioIR = salarioINSS - impostoIR;
