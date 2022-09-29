@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let whereP = document.getElementsByTagName('body');
+      let element = document.createElement('h1');
+      element.innerText = 'Exercício - JavaScript DOM';
+      whereP[0].appendChild(element);
+    
+      const whereP2 = document.querySelector('body');
+      const element2 = document.createElement('main');
+      element2.className = 'main-content';
+      whereP2.appendChild(element2);
+
+      const whereP3 = document.querySelector('main');
+      const element3 = document.createElement('section');
+      element3.className = 'center-content';
+      element3.style.backgroundcolor = 'black';
+      whereP3.appendChild(element3);
+
+      const whereP4 = document.querySelector('section');
+      const element4 = document.createElement('p');
+      element4.innerText = 'Algum texto';
+      whereP4.appendChild(element4);
+
+      const whereP5 = document.querySelector('main');
+      element5 = document.createElement('section');
+      element5.className = 'left-content';
+      whereP5.appendChild(element5);
+
+      const whereP6 = document.querySelector('main');
+      element6 = document.createElement('section');
+      element6.className = 'right-content';
+      whereP6.appendChild(element6);
+
+      const whereP7 = document.querySelector('section').nextElementSibling
+      const element7 = document.createElement('img');
+      element7.src = 'https://picsum.photos/200';
+      element7.className = 'small-image';
+      whereP7.appendChild(element7);
+
+      let num = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+      const whereP8 = document.querySelector('section').nextElementSibling.nextElementSibling;
+      const element8 = document.createElement('ul');
+      whereP8.appendChild(element8); 
+      for(let index of num){
+        const whereIP = document.querySelector('ul');
+        const elementIP = document.createElement('li');
+        elementIP.innerText = index;
+        whereIP.appendChild(elementIP);
+      }
+      for(let i = 0; i < num.length; i += 1) {
+        if(num[i] == 8 || num[i] == 9) {
+            element8.removeChild(elementIP);
+        }
+      }
+      
+
+      for(let i = 0; i < 3; i += 1) {
+      const whereP9 = document.querySelector('main');
+      const element9 = document.createElement('h3');
+      element9.className = 'description';
+      whereP9.appendChild(element9);
+      }
+
+
+      element.className = 'title';
+      
+      let remova = document.querySelector('section').nextElementSibling;
+      let local = document.querySelector('main');
+      local.removeChild(remova);
+
+      let mudaCentral = document.querySelector('section').nextElementSibling;
+      
+
+
+
+    </script>
+  </body>
+</html>
