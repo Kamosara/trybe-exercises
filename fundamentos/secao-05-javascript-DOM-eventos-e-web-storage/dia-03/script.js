@@ -54,11 +54,19 @@ function createDaysOfTheWeek() {
   function mudaCor(){
     const whereB = document.getElementsByClassName('holiday');
 
+    
+
     for(let i = 0; i < whereB.length; i += 1) {
-        console.log(whereB[i]);
-        whereB[i].style.backgroundColor = 'rgb(139, 222, 122)';    
+        
+        if(whereB[i].style.backgroundColor == 'rgb(139, 222, 122)') {
+          whereB[i].style.backgroundColor = '#eee';
+        }else{
+          whereB[i].style.backgroundColor = 'rgb(139, 222, 122)';
+        }
+            
     }
   }
+  
 
 
   function addButtonF(s) {
@@ -78,7 +86,53 @@ function createDaysOfTheWeek() {
     const whereC = document.getElementsByClassName('friday');
 
     for(let i = 0; i < whereC.length; i += 1) {
+      if(whereC[i].innerText == 'SEXTOU!!'){
+        whereC[i].innerText = whereC[i];
+      }else{
         whereC[i].innerText = 'SEXTOU!!';
+      }
+        
     }
   }
+
+
+  const botaoZ = document.getElementsByClassName('day');
+  botaoZ[0].addEventListener('mouseover', zoom);
+
+  function zoom() {
+    botaoZ.fontsize = '25px';
+  }
+
+  function task(str) {
+    const whereP4 = document.querySelector('.my-tasks');
+    element4 = document.createElement('span');
+    element4.innerText = str;
+    whereP4.appendChild(element4);
+  }
+
+  task('projeto');
+
+  function cor(str) {
+    const whereP5 = document.querySelector('.my-tasks');
+    element5 = document.createElement('div');
+    element5.style.backgroundColor = str;
+    element5.className = 'task'
+    whereP5.appendChild(element5);
+  }
+
+  cor('rgb(52, 97, 64)');
+
+
+  const whereP6 = document.querySelector('.task');
+  whereP6.addEventListener('click', taskSelect);
+  function taskSelect() {
+    if(whereP6.className == 'task'){
+      whereP6.className = 'task selected';
+    }else{
+      whereP6.className = 'task';
+    }
+
+    console.log(whereP6.className);
+  }
+
 
